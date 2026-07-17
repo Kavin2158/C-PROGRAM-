@@ -1,0 +1,200 @@
+// To Find Largest Number 
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if(a>=b&&a>=c)
+    printf("%d is the Largest",a);
+    else if(b>=c)
+    printf("%d is the Largest",b);
+    else 
+    printf("%d is the Largest",c);
+    return 0;
+}
+
+Output
+
+Enter three numbers:2 5 8
+8 is the Largest
+
+=== Code Execution Successful ===
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+// To Find Smallest Number
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if(a<=b&&a<=c)
+    printf("%d is the Smallest",a);
+    else if(b<=c)
+    printf("%d is the Smallest",b);
+    else 
+    printf("%d is the Smallest",c);
+    return 0;
+}
+
+Output
+
+Enter three numbers:2 5 8
+2 is the Smallest
+
+=== Code Execution Successful ===
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+// To Find Largest Number Among Four numbers
+
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c,d;
+    printf("Enter four numbers:");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    
+    if(a>=b&&a>=c&&a>=d)
+    printf("%d is the Largest",a);
+    else if(b>=c&&b>=d)
+    printf("%d is the Largest",b);
+    else if(c>=d)
+    printf("%d is the Largest",c);
+    else 
+    printf("%d is the Largest",d);
+    return 0;
+}
+
+Output
+
+Enter four numbers:12 25 36 68
+68 is the Largest
+
+=== Code Execution Successful ===
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Check whether all three numbers are equal
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if(a==b&&b==c)
+    printf("All three values are equal",a,b,c);
+    else
+    printf(" values are not equal",a,b,c);
+    return 0;
+
+}
+
+Output 1
+
+Enter three numbers:8 8 8
+All three values are equal
+
+=== Code Execution Successful ===
+
+Output 2
+
+Enter three numbers:5 25 65
+ values are not equal
+
+=== Code Execution Successful ===
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// To Find Second Largest Number
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    if((a>=b&&a<=c)||(a>=c&&a<=b))
+    printf("%d is the Second Largest",a);
+    else if((b >= a && b <= c) || (b >= c && b <= a))
+    printf("%d is the Second Largest",b);
+    else 
+    printf("%d is the Second Largest",c);
+    return 0;
+}
+
+
+Output
+
+
+Enter three numbers:255 69 32
+69 is the Second Largest
+
+=== Code Execution Successful ===
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Arrange numbers in Ascending order
+
+#include <stdio.h>
+
+int main() 
+{
+    int a,b,c;
+    printf("Enter three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+     if (a <= b && a <= c)
+    {
+        if (b<=c)
+            printf("%d %d %d",a,b,c);
+        else
+            printf("%d %d %d",a,c,b);
+    }
+    else if (b<=a&&b<=c)
+    {
+        if (a<=c)
+            printf("%d %d %d",b,a,c);
+        else
+            printf("%d %d %d",b,c,a);
+    }
+    else
+    {
+        if (a<=b)
+            printf("%d %d %d",c,a,b);
+        else
+            printf("%d %d %d",c,b,a);
+    }
+
+return 0;
+}
+
+Output
+
+Enter three numbers:55 65 8
+8 55 65
+
+=== Code Execution Successful ===
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
