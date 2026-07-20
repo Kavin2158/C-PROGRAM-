@@ -1,0 +1,142 @@
+//Program to multiply and divide two numbers and print them in thee format of equation (4*3=12 4/2=2)
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+
+    printf("Enter two numbers: ");
+    scanf("%d%d",&a,&b);
+
+    printf("%d*%d=%d\n",a,b,a*b);
+    printf("%d/%d=%d\n",a,b,a/b);
+
+    return 0;
+}
+
+Output
+
+Enter two numbers: 80 10
+80*10=800
+80/10=8
+
+=== Code Execution Successful ===
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+// Program to find square root and cube of the given number
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int n;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    printf("Square root of %d = %.3f\n", n, sqrt(n));
+    printf("Cube of %d = %.f\n", n, pow(n, 3));
+
+    return 0;
+}
+
+
+Output
+
+Enter a number: 2
+Square root of 2 = 1.414
+Cube of 2 = 8
+
+=== Code Execution Successful ===
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+// Program to find the area and perimeter of a square
+
+#include <stdio.h>
+
+int main() 
+{
+    int side;
+
+    printf("Enter side of the Square: ");
+    scanf("%d", &side);
+
+    printf("Area of the Square = %d\n", side*side);
+    
+    printf("Perimeter of square = %d\n",4*side);
+
+    return 0;
+}
+
+
+    return 0;
+}
+
+
+Output
+
+Enter side of the Square: 8
+Area of the Square = 64
+Perimeter of square = 32
+
+=== Code Execution Successful ===
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+//Program to find the area and circumference of the circle
+
+#include <stdio.h>
+
+int main() 
+{
+    int radius;
+    int pi=3;
+
+    printf("Enter radius of a circle :");
+    scanf("%d",&radius);
+
+    printf("Area of the circle= %d\n",pi*radius*radius);
+    
+    printf("Circumference of a cicle = %d\n", 2*pi*radius);
+
+    return 0;
+}
+
+
+Output
+ 
+Enter radius of a circle :5
+Area of the circle= 75
+Circumference of a cicle = 30
+
+=== Code Execution Successful ===
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+//Program to find the area of a sphere
+
+#include <stdio.h>
+
+int main() 
+{
+    int radius;
+    int pi=3;
+    
+    printf("Enter radius of a Sphere :");
+    scanf("%d",&radius);
+
+    printf("Area of the sphere= %d\n",4*pi*radius*radius);
+
+    return 0;
+}
+
+Output
+
+Enter radius of a Sphere :5
+Area of the sphere= 300
+
+=== Code Execution Successful ===
+
+----------------------------------------------------------------------------------------------------------------
