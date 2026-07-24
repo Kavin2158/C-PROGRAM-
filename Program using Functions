@@ -109,6 +109,112 @@ Answer 40
 
 -------------------------------------------------------------------------------------------------
 
+//To find greatest number among three numbers using userdefined functions
+
+#include <stdio.h>
+int large(int a,int b,int c){
+    if(a>=b&&a>=c)
+   return a;
+    else if(b>=a&&b>=c)
+    return b;
+    else
+    return c;
+}
+void main() {
+    int a,b,c;
+    printf("Enter any three numbers:");
+    scanf("%d%d%d",&a,&b,&c);
+    
+    printf("The largest of three numbers is:%d",large(a,b,c));
+    
+}
+
+Output
+
+Enter any three numbers:8 9 89 
+The largest of three numbers is:89
+
+=== Code Exited With Errors ===
+
+------------------------------------------------------------------------------------------------------
+
+// To find the equal numbers among three numbers
+
+#include <stdio.h>
+
+int equal(int a,int b,int c){
+    if(a==b&&a==c)
+   return 1;
+    else 
+    return 0;
+}
+int main() {
+    int a,b,c;
+    printf("Enter any three numbers:");
+    scanf("%d%d%d%",&a,&b,&c);
+    
+    if(equal(a,b,c)==1)
+    printf("Given numbers are equal");
+    else
+    
+     printf("Given numbers are not equal");
+    
+}
+
+Output
+
+Enter any three numbers:87 89 67
+Given numbers are not equal
+
+=== Code Execution Successful ===
+
+Output
+
+Enter any three numbers:87 89 67
+Given numbers are not equal
+
+=== Code Execution Successful ===
+
+-------------------------------------------------------------------------------------------
+
+//
+
+#include<stdio.h>
+int elgi(int age){
+     if(age>=18){
+      return 1;
+   }
+   else{
+      return 0;
+   }
+
+}
+int main() {
+   int age;
+   printf("Enter your age:");
+   scanf("%d",&age);
+  if(elgi(age)==1)
+   printf("You are eligible to vote");
+   else
+   printf("You are not eligible to vote");
+  
+}
+
+Output
+
+Enter your age:22
+You are eligible to vote
+
+=== Code Execution Successful ===
+
+Output
+
+Enter your age:15
+You are not eligible to vote
+
+=== Code Execution Successful ===
+
+---------------------------------------------------------------------------------------------------------
 
 
 
