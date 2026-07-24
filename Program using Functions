@@ -1,0 +1,120 @@
+// Program 
+
+#include <stdio.h>
+
+void greet();
+
+void main()
+{
+    greet();
+}
+
+ void greet()
+ {
+     printf("Welcome to the Fantasy Functions");
+ }
+
+Output
+
+Welcome to the Fantasy Functions
+
+=== Code Exited With Errors ===
+
+--------------------------------------------------------------------------------------------------
+
+//Program for function with no arguments and no returntype
+
+#include <stdio.h>
+
+void add()
+{
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    
+    int c=a+b;
+    printf("Answer %d",c);
+    
+}
+
+ void main() 
+ {
+     add();
+ }
+
+
+ }
+ 
+Output
+
+Enter two numbers:5 6
+Answer 11
+
+=== Code Exited With Errors ===
+
+--------------------------------------------------------------------------------------------------
+
+//Program of functions with argument and without returntype
+
+#include <stdio.h>
+
+void add(int a, int b)
+{
+    int c=a+b;
+    printf("Answer %d",c);
+}
+void main()
+{
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    
+    int c=a+b;
+    printf("Answer %d",c);
+    
+}
+
+Output
+
+Enter two numbers:23 5
+Answer 28
+
+=== Code Exited With Errors ===
+
+-----------------------------------------------------------------------------------------
+
+//Program of functions with argument and with returntype
+#include <stdio.h>
+
+int add(int a, int b)
+{
+    return a+b;
+}
+void main()
+{
+    int a,b;
+    printf("Enter two numbers:");
+    scanf("%d%d",&a,&b);
+    
+    printf("Answer %d",add(a,b));
+    
+}
+
+Output
+
+Enter two numbers:34 6
+Answer 40
+
+=== Code Exited With Errors ===
+
+-------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
